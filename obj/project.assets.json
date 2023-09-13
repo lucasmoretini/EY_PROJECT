@@ -939,11 +939,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Lucas FIAP -2023\\EY\\EY_Project\\EY_Project.csproj",
+      "projectUniqueName": "C:\\Lucas FIAP -2023\\EY_PROJECT\\EY_Project.csproj",
       "projectName": "EY_Project",
-      "projectPath": "C:\\Lucas FIAP -2023\\EY\\EY_Project\\EY_Project.csproj",
+      "projectPath": "C:\\Lucas FIAP -2023\\EY_PROJECT\\EY_Project.csproj",
       "packagesPath": "C:\\Users\\Lucas Moretini\\.nuget\\packages\\",
-      "outputPath": "C:\\Lucas FIAP -2023\\EY\\EY_Project\\obj\\",
+      "outputPath": "C:\\Lucas FIAP -2023\\EY_PROJECT\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lucas Moretini\\AppData\\Roaming\\NuGet\\NuGet.Config",

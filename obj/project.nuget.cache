@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eV2+C0KIJF1qCgKVpPxx1mNHtA0Vv0Rg4Qlhw2G7dPd8I3g7F/POlAovutJ7qHk1yp6kb91k4ZpnPpma5zLLzQ==",
+  "dgSpecHash": "pPsen9hH5XSSP+FrAuYnoS2t9bLuVI6xyiMlESvHH6Wh/IDZ+rvm3bf8PSGYPFC24kS62AnX7NeeK89ofGQBcw==",
   "success": true,
-  "projectFilePath": "C:\\Lucas FIAP -2023\\EY\\EY_Project\\EY_Project.csproj",
+  "projectFilePath": "C:\\Lucas FIAP -2023\\EY_PROJECT\\EY_Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas Moretini\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Lucas Moretini\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

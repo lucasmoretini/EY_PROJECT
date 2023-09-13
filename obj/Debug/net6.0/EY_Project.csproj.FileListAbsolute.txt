@@ -38,3 +38,13 @@ C:\Lucas FIAP -2023\EY\EY_Project\bin\Debug\net6.0\ZstdSharp.dll
 C:\Lucas FIAP -2023\EY\EY_Project\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
 C:\Lucas FIAP -2023\EY\EY_Project\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Lucas FIAP -2023\EY\EY_Project\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.csproj.AssemblyReference.cache
+C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.AssemblyInfoInputs.cache
+C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.AssemblyInfo.cs
+C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.csproj.CoreCompileInputs.cache
+C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.MvcApplicationPartsAssemblyInfo.cs
+C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.dll
+C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\refint\EY_Project.dll
+C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.pdb

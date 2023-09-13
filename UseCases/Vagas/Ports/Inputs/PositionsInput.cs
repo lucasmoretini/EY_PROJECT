@@ -6,6 +6,9 @@ public class PositionsInput
     [JsonPropertyName("id_vaga")]
     public long? Id { get; set; }
 
+    [JsonPropertyName("id_recrutador")]
+    public long IdRecruiter { get; set; }
+
     [JsonPropertyName("titulo_vaga")]
     public string? Title { get; set; }
 
