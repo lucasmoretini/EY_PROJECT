@@ -39,8 +39,6 @@ public class CandidatoController : ControllerBase
         var vagas = await _mongoHelper.GetAllDocuments<PositionsInput>(_cluster, "vagas");
         var vaga = candidatos.Where(x => x.Id == idVaga).FirstOrDefault();
 
-        candidatoSelecionado
-
         return Ok("recrutador criado com sucesso");
     }
 }
