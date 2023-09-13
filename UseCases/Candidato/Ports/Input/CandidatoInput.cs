@@ -1,4 +1,4 @@
-﻿namespace EY_Project.UseCases.Candidato.Ports.Input;
+namespace EY_Project.UseCases.Candidato.Ports.Input;
 
 public class CandidatoInput
 {

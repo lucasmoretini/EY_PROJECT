@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{BACDC659-3AD8-4F36-A052-8DEBC29C1C24}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/Vagas/VagasController.cs">
+    <Files>
+      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="Infrastructure/Repositories/IMongoRepository.cs" Line="1" Column="1" />
+      <File FileName="Infrastructure/Repositories/MongoRepository.cs" Line="1" Column="1" />
+      <File FileName="Controllers/Vagas/VagasController.cs" Line="44" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EY_Project">
+            <Node name="EY_Project">
+              <Node name="Controllers" expanded="True">
+                <Node name="Vagas" expanded="True">
+                  <Node name="VagasController.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Infrastructure" expanded="True">
+                <Node name="Repositories" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.EY__Project PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

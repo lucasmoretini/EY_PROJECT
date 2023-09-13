@@ -1,4 +1,4 @@
-﻿using EY_Project.Infrastructure.Repositories;
+using EY_Project.Infrastructure.Repositories;
 using EY_Project.UseCases.Candidato.Ports.Input;
 using EY_Project.UseCases.Vagas.Ports.Inputs;
 using Microsoft.AspNetCore.Mvc;
