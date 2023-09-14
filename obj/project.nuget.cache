@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "pPsen9hH5XSSP+FrAuYnoS2t9bLuVI6xyiMlESvHH6Wh/IDZ+rvm3bf8PSGYPFC24kS62AnX7NeeK89ofGQBcw==",
-  "success": true,
-  "projectFilePath": "C:\\Lucas FIAP -2023\\EY_PROJECT\\EY_Project.csproj",
-=======
   "dgSpecHash": "Bm4YZxNQfq51ChSni62OsA906gzgNVHch0Jx1UC8noChznIEUy/s1pPOy5pStGQXFNgv1t/el6yTobUpj5bGbw==",
   "success": true,
   "projectFilePath": "/Users/luiz.silva/picpay/EY_PROJECT/EY_Project.csproj",
->>>>>>> Stashed changes
   "expectedPackageFiles": [
     "/Users/luiz.silva/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/Users/luiz.silva/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -35,5 +29,12 @@
     "/Users/luiz.silva/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
     "/Users/luiz.silva/.nuget/packages/zstdsharp.port/0.6.2/zstdsharp.port.0.6.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache /Users/luiz.silva/picpay/EY_PROJECT/obj/project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

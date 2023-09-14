@@ -1003,19 +1003,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
-      "projectUniqueName": "C:\\Lucas FIAP -2023\\EY_PROJECT\\EY_Project.csproj",
-      "projectName": "EY_Project",
-      "projectPath": "C:\\Lucas FIAP -2023\\EY_PROJECT\\EY_Project.csproj",
-      "packagesPath": "C:\\Users\\Lucas Moretini\\.nuget\\packages\\",
-      "outputPath": "C:\\Lucas FIAP -2023\\EY_PROJECT\\obj\\",
-=======
       "projectUniqueName": "/Users/luiz.silva/picpay/EY_PROJECT/EY_Project.csproj",
       "projectName": "EY_Project",
       "projectPath": "/Users/luiz.silva/picpay/EY_PROJECT/EY_Project.csproj",
       "packagesPath": "/Users/luiz.silva/.nuget/packages/",
       "outputPath": "/Users/luiz.silva/picpay/EY_PROJECT/obj/",
->>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/luiz.silva/.nuget/NuGet/NuGet.Config"
@@ -1078,5 +1070,13 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache /Users/luiz.silva/picpay/EY_PROJECT/obj/project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

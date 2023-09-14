@@ -50,6 +50,7 @@ C:/Lucas FIAP -2023/EY_PROJECT/obj/Debug/net6.0/EY_Project.dll
 C:/Lucas FIAP -2023/EY_PROJECT/obj/Debug/net6.0/refint/EY_Project.dll
 C:/Lucas FIAP -2023/EY_PROJECT/obj/Debug/net6.0/EY_Project.pdb
 =======
+>>>>>>> Stashed changes
 /Users/luiz.silva/picpay/EY_PROJECT/bin/Debug/net6.0/appsettings.Development.json
 /Users/luiz.silva/picpay/EY_PROJECT/bin/Debug/net6.0/appsettings.json
 /Users/luiz.silva/picpay/EY_PROJECT/bin/Debug/net6.0/EY_Project
@@ -95,4 +96,3 @@ C:/Lucas FIAP -2023/EY_PROJECT/obj/Debug/net6.0/EY_Project.pdb
 /Users/luiz.silva/picpay/EY_PROJECT/obj/Debug/net6.0/EY_Project.pdb
 /Users/luiz.silva/picpay/EY_PROJECT/obj/Debug/net6.0/EY_Project.genruntimeconfig.cache
 /Users/luiz.silva/picpay/EY_PROJECT/obj/Debug/net6.0/ref/EY_Project.dll
->>>>>>> Stashed changes
