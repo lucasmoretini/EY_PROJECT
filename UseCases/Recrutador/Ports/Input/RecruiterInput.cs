@@ -8,5 +8,6 @@ public class RecruiterInput
     public string? Nome { get; set; }
     public string? Email { get; set; }
     public string? Senha { get; set; }
+    public long? EmpresaId { get; set; }
     public List<PositionsInput>? Vagas { get; set; }
 }

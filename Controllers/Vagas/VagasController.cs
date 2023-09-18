@@ -43,7 +43,7 @@ public class VagasController : ControllerBase
     [HttpPut("/atualiza-vaga")]
     public async Task<IActionResult> PutPostions([FromBody] PositionsInput input)
     {
-        var filter = Builders<PositionsInput>.Filter.Eq("id_vaga", input.Id);
+        var filter = Builders<PositionsInput>.Filter.Eq("Id", input.Id);
         var update = Builders<PositionsInput>.Update.Set(x => x.Description, input.Description);
 
         await _mongoHelper.UpdateDocument<PositionsInput>(_cluster, _collection, filter, update);
@@ -53,7 +53,7 @@ public class VagasController : ControllerBase
     [HttpPut("/deleta-vaga")]
     public async Task<IActionResult> DeletePostions([FromQuery] long id)
     {
-        var filter = Builders<PositionsInput>.Filter.Eq("id_vaga", id);
+        var filter = Builders<PositionsInput>.Filter.Eq("Id", id);
         await _mongoHelper.DeleteDocument<PositionsInput>(_cluster, _collection, filter);
         return Ok("vaga deletada com sucesso");
     }

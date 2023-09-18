@@ -2,6 +2,7 @@ using EY_Project.Infrastructure.Repositories;
 using EY_Project.UseCases.Candidato.Ports.Input;
 using EY_Project.UseCases.Vagas.Ports.Inputs;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Driver;
 
 namespace EY_Project.Controllers.Candidato;
 
@@ -27,18 +28,31 @@ public class CandidatoController : ControllerBase
     public async Task<IActionResult> PostCandidatos([FromBody] CandidatoInput input)
     {
         await _mongoHelper.CreateDocument<CandidatoInput>(_cluster, _collection, input);
-        return Ok("recrutador criado com sucesso");
+        return Ok("Candidato criado com sucesso");
     }
 
     [HttpPost("/atrela-candidato-vaga")]
-    public async Task<IActionResult> PostCandidatos([FromQuery] long idCandidato, [FromQuery] long idVaga)
+    public async Task<IActionResult> PostCandidatos([FromQuery] long idCandidato, [FromQuery] long idVaga, [FromQuery] long idEtapa)
     {
         var candidatos = await _mongoHelper.GetAllDocuments<CandidatoInput>(_cluster, _collection);
         var candidatoSelecionado = candidatos.Where(x => x.Id == idCandidato).FirstOrDefault();
 
         var vagas = await _mongoHelper.GetAllDocuments<PositionsInput>(_cluster, "vagas");
-        var vaga = candidatos.Where(x => x.Id == idVaga).FirstOrDefault();
+        var vaga = vagas.Where(x => x.Id == idVaga).FirstOrDefault();
 
-        return Ok("recrutador criado com sucesso");
+        candidatoSelecionado?.VagasSelecionadas.Add(new VagaSelecionada(idEtapa, vaga));
+        
+        var update = Builders<CandidatoInput>.Update.Set(x => x.VagasSelecionadas, candidatoSelecionado?.VagasSelecionadas);
+        var filter = Builders<CandidatoInput>.Filter.Eq("Id", candidatoSelecionado.Id);
+
+        vaga?.Candidatos?.Add(candidatoSelecionado.Id);
+
+        var filterVaga = Builders<PositionsInput>.Filter.Eq("Id", vaga.Id);
+        var updateVaga = Builders<PositionsInput>.Update.Set(x => x.Candidatos, vaga?.Candidatos);
+
+        await _mongoHelper.UpdateDocument<CandidatoInput>(_cluster, _collection, filter, update);
+        await _mongoHelper.UpdateDocument<PositionsInput>(_cluster, "vagas", filterVaga, updateVaga);
+
+        return Ok("Candidato atrelado a vaga");
     }
 }
