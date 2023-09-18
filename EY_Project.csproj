@@ -12,4 +12,24 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="UseCases\Empresa\" />
+    <None Remove="UseCases\Empresa\Ports\" />
+    <None Remove="UseCases\Empresa\Ports\Input\" />
+    <None Remove="Controllers\Empresa\" />
+    <None Remove="Controllers\Login\" />
+    <None Remove="UseCases\Login\" />
+    <None Remove="UseCases\Login\Ports\" />
+    <None Remove="UseCases\Login\Ports\Input\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UseCases\Empresa\" />
+    <Folder Include="UseCases\Empresa\Ports\" />
+    <Folder Include="UseCases\Empresa\Ports\Input\" />
+    <Folder Include="Controllers\Empresa\" />
+    <Folder Include="Controllers\Login\" />
+    <Folder Include="UseCases\Login\" />
+    <Folder Include="UseCases\Login\Ports\" />
+    <Folder Include="UseCases\Login\Ports\Input\" />
+  </ItemGroup>
 </Project>

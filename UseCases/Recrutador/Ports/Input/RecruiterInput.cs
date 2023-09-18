@@ -1,4 +1,6 @@
-﻿namespace EY_Project.UseCases.Recrutador.Ports.Input;
+﻿using EY_Project.UseCases.Vagas.Ports.Inputs;
+
+namespace EY_Project.UseCases.Recrutador.Ports.Input;
 
 public class RecruiterInput
 {
@@ -6,4 +8,6 @@ public class RecruiterInput
     public string? Nome { get; set; }
     public string? Email { get; set; }
     public string? Senha { get; set; }
+    public long? EmpresaId { get; set; }
+    public List<PositionsInput>? Vagas { get; set; }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Text.Json.Serialization;
+using EY_Project.UseCases.Candidato.Ports.Input;
 
 namespace EY_Project.UseCases.Vagas.Ports.Inputs;
 public class PositionsInput
@@ -26,6 +27,9 @@ public class PositionsInput
 
     [JsonPropertyName("situacao_vulnerabilidade")]
     public string? Vulnerability { get; set; }
+
+    [JsonPropertyName("candidatos")]
+    public List<long?>? Candidatos { get; set; }
 
     [JsonPropertyName("etapas_processo_seletivo")]
     public IEnumerable<SelectiveProcessInput>? SelectiveProcess { get; set; }

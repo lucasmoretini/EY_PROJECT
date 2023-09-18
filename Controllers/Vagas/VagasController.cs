@@ -1,4 +1,5 @@
 ﻿using EY_Project.Infrastructure.Repositories;
+using EY_Project.UseCases.Recrutador.Ports.Input;
 using EY_Project.UseCases.Vagas.Ports.Inputs;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
@@ -28,13 +29,21 @@ public class VagasController : ControllerBase
     public async Task<IActionResult> PostPostions([FromBody] PositionsInput input)
     {
         await _mongoHelper.CreateDocument<PositionsInput>(_cluster, _collection, input);
+        var filter = Builders<RecruiterInput>.Filter.Eq("Id", input.IdRecruiter);
+        var recruiter = await _mongoHelper.GetFilteredDocuments<RecruiterInput>(_cluster, "recrutador", filter);
+        var vagas = recruiter?.FirstOrDefault()?.Vagas ?? new List<PositionsInput>();
+        vagas.Add(input);
+
+        var update = Builders<RecruiterInput>.Update.Set(x => x.Vagas, vagas);
+
+        await _mongoHelper.UpdateDocument<RecruiterInput>(_cluster, "recrutador", filter, update);
         return Ok("vaga criada com sucesso");
     }
 
     [HttpPut("/atualiza-vaga")]
     public async Task<IActionResult> PutPostions([FromBody] PositionsInput input)
     {
-        var filter = Builders<PositionsInput>.Filter.Eq("id_vaga", input.Id);
+        var filter = Builders<PositionsInput>.Filter.Eq("Id", input.Id);
         var update = Builders<PositionsInput>.Update.Set(x => x.Description, input.Description);
 
         await _mongoHelper.UpdateDocument<PositionsInput>(_cluster, _collection, filter, update);
@@ -44,7 +53,7 @@ public class VagasController : ControllerBase
     [HttpPut("/deleta-vaga")]
     public async Task<IActionResult> DeletePostions([FromQuery] long id)
     {
-        var filter = Builders<PositionsInput>.Filter.Eq("id_vaga", id);
+        var filter = Builders<PositionsInput>.Filter.Eq("Id", id);
         await _mongoHelper.DeleteDocument<PositionsInput>(_cluster, _collection, filter);
         return Ok("vaga deletada com sucesso");
     }

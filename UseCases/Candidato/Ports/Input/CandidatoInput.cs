@@ -1,4 +1,4 @@
-﻿namespace EY_Project.UseCases.Candidato.Ports.Input;
+namespace EY_Project.UseCases.Candidato.Ports.Input;
 
 public class CandidatoInput
 {
@@ -16,5 +16,6 @@ public class CandidatoInput
     public string? ModeloTrabalho { get; set; }
     public string? ModeloContratacao { get; set; }
     public decimal? PretensaoSalarial { get; set; }
-    public IEnumerable<long?> VagasSelecionadas { get; set; } = new List<long>();
+    public string? Senha { get; set; }
+    public List<VagaSelecionada> VagasSelecionadas { get; set; } = new List<VagaSelecionada>();
 }

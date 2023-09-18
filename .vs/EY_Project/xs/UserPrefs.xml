@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{BACDC659-3AD8-4F36-A052-8DEBC29C1C24}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/Candidato/CandidatoController.cs">
+    <Files>
+      <File FileName="Controllers/Candidato/CandidatoController.cs" Line="37" Column="6" />
+      <File FileName="Controllers/Vagas/VagasController.cs" Line="31" Column="48" />
+      <File FileName="UseCases/Candidato/Ports/Input/CandidatoInput.cs" Line="3" Column="14" />
+      <File FileName="UseCases/Candidato/Ports/Input/VagaSelecionada.cs" Line="8" Column="16" />
+      <File FileName="UseCases/Vagas/Ports/Inputs/PositionsInput.cs" Line="7" Column="31" />
+      <File FileName="UseCases/Recrutador/Ports/Input/RecruiterInput.cs" Line="5" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EY_Project">
+            <Node name="EY_Project">
+              <Node name="Controllers">
+                <Node name="Candidato">
+                  <Node name="CandidatoController.cs" selected="True" />
+                </Node>
+                <Node name="Recrutador" expanded="True" />
+                <Node name="Vagas" expanded="True" />
+              </Node>
+              <Node name="Infrastructure" expanded="True">
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="UseCases" expanded="True">
+                <Node name="Recrutador" expanded="True">
+                  <Node name="Ports" expanded="True">
+                    <Node name="Input" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Vagas" expanded="True">
+                  <Node name="Ports" expanded="True">
+                    <Node name="Inputs" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.EY__Project PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
