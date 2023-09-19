@@ -9,11 +9,8 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IMongoRepository, MongoRepository>();
 
 var app = builder.Build();
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
