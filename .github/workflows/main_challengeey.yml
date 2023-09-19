@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'challengeey'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_60FB4DD3D4334A6888E965A91CCFAE1A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A149BB201D3748919BB2DECC9F48B615 }}
           package: .
