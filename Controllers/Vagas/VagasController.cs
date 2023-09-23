@@ -44,7 +44,16 @@ public class VagasController : ControllerBase
     public async Task<IActionResult> PutPostions([FromBody] PositionsInput input)
     {
         var filter = Builders<PositionsInput>.Filter.Eq("Id", input.Id);
-        var update = Builders<PositionsInput>.Update.Set(x => x.Description, input.Description);
+        var update = Builders<PositionsInput>.Update
+                                             .Set(x => x.Description, input.Description)
+                                             .Set(x => x.Id, input.Id)
+                                             .Set(x => x.IdRecruiter, input.IdRecruiter)
+                                             .Set(x => x.Title, input.Title)
+                                             .Set(x => x.Employer, input.Employer)
+                                             .Set(x => x.JobType, input.JobType)
+                                             .Set(x => x.Compensation, input.Vulnerability)
+                                             .Set(x => x.Candidatos, input.Candidatos)
+                                             .Set(x => x.SelectiveProcess, input.SelectiveProcess);
 
         await _mongoHelper.UpdateDocument<PositionsInput>(_cluster, _collection, filter, update);
         return Ok("vaga atualizada com sucesso");
