@@ -2,10 +2,10 @@
 
 public class SoftSkills
 {
-    public IEnumerable<string>? Skills { get; set; }
+    public string? Skills { get; set; }
 }
 
 public class HardSkills
 {
-    public IEnumerable<string>? Skills { get; set; }
+    public string? Skills { get; set; }
 }
