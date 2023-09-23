@@ -40,14 +40,14 @@ public class CandidatoController : ControllerBase
         var vagas = await _mongoHelper.GetAllDocuments<PositionsInput>(_cluster, "vagas");
         var vaga = vagas.Where(x => x.Id == idVaga).FirstOrDefault();
 
-        candidatoSelecionado?.VagasSelecionadas.Add(new VagaSelecionada(idEtapa, vaga));
+        candidatoSelecionado?.VagasSelecionadas.Add(new VagaSelecionada(idEtapa, vaga!));
         
         var update = Builders<CandidatoInput>.Update.Set(x => x.VagasSelecionadas, candidatoSelecionado?.VagasSelecionadas);
-        var filter = Builders<CandidatoInput>.Filter.Eq("Id", candidatoSelecionado.Id);
+        var filter = Builders<CandidatoInput>.Filter.Eq("Id", candidatoSelecionado?.Id);
 
-        vaga?.Candidatos?.Add(candidatoSelecionado.Id);
+        vaga?.Candidatos?.Add(candidatoSelecionado?.Id);
 
-        var filterVaga = Builders<PositionsInput>.Filter.Eq("Id", vaga.Id);
+        var filterVaga = Builders<PositionsInput>.Filter.Eq("Id", vaga?.Id);
         var updateVaga = Builders<PositionsInput>.Update.Set(x => x.Candidatos, vaga?.Candidatos);
 
         await _mongoHelper.UpdateDocument<CandidatoInput>(_cluster, _collection, filter, update);
