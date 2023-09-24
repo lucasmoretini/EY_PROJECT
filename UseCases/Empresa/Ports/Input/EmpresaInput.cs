@@ -14,6 +14,7 @@ namespace EY_Project.UseCases.Empresa.Ports.Input
         public string? Localizacao { get; set; }
         public int? Fundacao { get; set; }
         public string? Site { get; set; }
+        public string? ImageUri { get; set; }
     }
 }
 

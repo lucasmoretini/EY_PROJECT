@@ -93,6 +93,6 @@ public class CandidatoController : ControllerBase
 
         await _mongoHelper.UpdateDocument(_cluster, _collection, filterCandidato, updateCandidato);
 
-        return Ok("Status alterado com sucesso");
+        return Ok("Etapa alterada com sucesso");
     }
 }
