@@ -10,7 +10,7 @@ using MongoDB.Driver;
 
 namespace EY_Project.Controllers.Login
 {
-	public class LoginController : ControllerBase
+    public class LoginController : ControllerBase
     {
         private const string _cluster = "Cluster0";
 
@@ -19,7 +19,6 @@ namespace EY_Project.Controllers.Login
         public LoginController(IMongoRepository mongo) =>
             _mongoHelper = mongo;
 
-
         [HttpGet("/login")]
         public async Task<IActionResult> Login([FromQuery] String email, [FromQuery] String senha)
         {
@@ -27,15 +26,12 @@ namespace EY_Project.Controllers.Login
             var empresas = await _mongoHelper.GetFilteredDocuments<EmpresaInput>(_cluster, "empresas", filterEmpresa);
             var empresa = empresas.FirstOrDefault();
 
-            if(empresa != null)
+            if (empresa != null)
             {
                 if (empresa.Senha == senha)
-                {
                     return Ok(new LoginInput(empresa.Id, "empresa"));
-                } else
-                {
-                    return BadRequest("Senha incorreta");
-                }
+
+                return BadRequest("Senha incorreta");
             }
 
             var filterRecrutador = Builders<RecruiterInput>.Filter.Eq("Email", email);
@@ -45,13 +41,9 @@ namespace EY_Project.Controllers.Login
             if (recrutador != null)
             {
                 if (recrutador.Senha == senha)
-                {
                     return Ok(new LoginInput(recrutador.Id, "recrutador"));
-                }
-                else
-                {
-                    return BadRequest("Senha incorreta");
-                }
+
+                return BadRequest("Senha incorreta");
             }
 
             var filterCandidato = Builders<CandidatoInput>.Filter.Eq("Email", email);
@@ -61,13 +53,9 @@ namespace EY_Project.Controllers.Login
             if (candidato != null)
             {
                 if (candidato.Senha == senha)
-                {
                     return Ok(new LoginInput(candidato.Id, "candidato"));
-                }
-                else
-                {
-                    return BadRequest("Senha incorreta");
-                }
+
+                return BadRequest("Senha incorreta");
             }
 
             return NotFound();
