@@ -7,15 +7,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAnyOrigin", builder =>
-    {
-        builder.AllowAnyOrigin()
-               .AllowAnyHeader()
-               .AllowAnyMethod();
-    });
-});
+
 builder.Services.AddScoped<IMongoRepository, MongoRepository>();
 
 var app = builder.Build();
@@ -23,6 +15,10 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
+
+app.UseCors(x => x.AllowAnyHeader()
+.AllowAnyMethod()
+.WithOrigins("http://localhost:3000"));
 
 app.UseAuthorization();
 
