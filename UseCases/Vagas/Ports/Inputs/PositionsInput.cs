@@ -32,5 +32,5 @@ public class PositionsInput
     public List<long?>? Candidatos { get; set; }
 
     [JsonPropertyName("etapas_processo_seletivo")]
-    public IEnumerable<SelectiveProcessInput>? SelectiveProcess { get; set; }
+    public List<SelectiveProcessInput>? SelectiveProcess { get; set; }
 }
