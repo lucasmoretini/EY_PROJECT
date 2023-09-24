@@ -58,7 +58,7 @@ public class CandidatoController : ControllerBase
     }
 
     [HttpPut("/altera-status-processo")]
-    public async Task<IActionResult> PostCandidatos(
+    public async Task<IActionResult> PutStatus(
         [FromQuery] long idCandidato, [FromQuery] long idVaga, [FromQuery] long idProcesso, [FromQuery] String status
        )
     {
@@ -68,6 +68,25 @@ public class CandidatoController : ControllerBase
         candidatoSelecionado!.VagasSelecionadas!
             .Find(x => x?.Vaga?.Id == idVaga)!.Vaga!.SelectiveProcess!
             .Find(x => x.Id == idProcesso)!.Status = status;
+
+        var filterCandidato = Builders<CandidatoInput>.Filter.Eq("Id", candidatoSelecionado?.Id);
+        var updateCandidato = Builders<CandidatoInput>.Update.Set(x => x.VagasSelecionadas, candidatoSelecionado!.VagasSelecionadas);
+
+        await _mongoHelper.UpdateDocument(_cluster, _collection, filterCandidato, updateCandidato);
+
+        return Ok("Status alterado com sucesso");
+    }
+
+    [HttpPut("/altera-etapa")]
+    public async Task<IActionResult> PutEtapa(
+        [FromQuery] long idCandidato, [FromQuery] long idVaga, [FromQuery] long idEtapa
+       )
+    {
+        var candidatos = await _mongoHelper.GetAllDocuments<CandidatoInput>(_cluster, _collection);
+        var candidatoSelecionado = candidatos.Where(x => x.Id == idCandidato).FirstOrDefault();
+
+        candidatoSelecionado!.VagasSelecionadas!
+            .Find(x => x?.Vaga?.Id == idVaga)!.EtapaId = idEtapa;
 
         var filterCandidato = Builders<CandidatoInput>.Filter.Eq("Id", candidatoSelecionado?.Id);
         var updateCandidato = Builders<CandidatoInput>.Update.Set(x => x.VagasSelecionadas, candidatoSelecionado!.VagasSelecionadas);
