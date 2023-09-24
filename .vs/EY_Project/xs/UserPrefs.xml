@@ -1,51 +1,21 @@
 ﻿<Properties StartupConfiguration="{BACDC659-3AD8-4F36-A052-8DEBC29C1C24}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/luiz.silva/picpay/EY_PROJECT/Controllers/Candidato/CandidatoController.cs" relfile="Controllers/Candidato/CandidatoController.cs" line="53" column="1" />
-      <Breakpoint file="/Users/luiz.silva/picpay/EY_PROJECT/Controllers/Candidato/CandidatoController.cs" relfile="Controllers/Candidato/CandidatoController.cs" line="54" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.EY__Project PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/Login/LoginController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/Candidato/CandidatoController.cs">
     <Files>
-      <File FileName="Controllers/Login/LoginController.cs" Line="59" Column="17" />
-      <File FileName="UseCases/Recrutador/Ports/Input/RecruiterInput.cs" Line="5" Column="20" />
+      <File FileName="Controllers/Candidato/CandidatoController.cs" Line="57" Column="6" />
       <File FileName="UseCases/Candidato/Ports/Input/CandidatoInput.cs" Line="3" Column="14" />
+      <File FileName="UseCases/Vagas/Ports/Inputs/PositionsInput.cs" Line="31" Column="28" />
+      <File FileName="UseCases/Vagas/Ports/Inputs/SelectiveProcessInput.cs" Line="19" Column="40" />
+      <File FileName="UseCases/Candidato/Ports/Input/VagaSelecionada.cs" Line="15" Column="27" />
+      <File FileName="Program.cs" Line="13" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EY_Project">
+          <Node name="EY_Project" selected="True">
             <Node name="EY_Project">
               <Node name="Controllers" expanded="True">
                 <Node name="Candidato" expanded="True" />
-                <Node name="Empresa" expanded="True" />
                 <Node name="Login" expanded="True" />
-                <Node name="Recrutador" expanded="True" />
-                <Node name="Vagas" expanded="True" />
-              </Node>
-              <Node name="Infrastructure" expanded="True">
-                <Node name="Repositories" expanded="True" />
-              </Node>
-              <Node name="UseCases" expanded="True">
-                <Node name="Candidato" expanded="True">
-                  <Node name="Ports" expanded="True">
-                    <Node name="Input" expanded="True" />
-                  </Node>
-                </Node>
-                <Node name="Login" expanded="True">
-                  <Node name="Ports" expanded="True">
-                    <Node name="Input" expanded="True" />
-                  </Node>
-                </Node>
-                <Node name="Recrutador" expanded="True">
-                  <Node name="Ports" expanded="True">
-                    <Node name="Input" expanded="True" />
-                  </Node>
-                </Node>
               </Node>
             </Node>
           </Node>
@@ -53,4 +23,14 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/luiz.silva/picpay/EY_PROJECT/Controllers/Candidato/CandidatoController.cs" relfile="Controllers/Candidato/CandidatoController.cs" line="53" column="1" />
+      <Breakpoint file="/Users/luiz.silva/picpay/EY_PROJECT/Controllers/Candidato/CandidatoController.cs" relfile="Controllers/Candidato/CandidatoController.cs" line="54" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.EY__Project PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

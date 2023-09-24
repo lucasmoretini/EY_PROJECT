@@ -14,4 +14,7 @@ public class SelectiveProcessInput
 
     [JsonPropertyName("link_util")]
     public string? UtilLink { get; set; }
+
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
 }

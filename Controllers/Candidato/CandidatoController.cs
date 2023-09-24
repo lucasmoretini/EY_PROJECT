@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using EY_Project.Infrastructure.Repositories;
 using EY_Project.UseCases.Candidato.Ports.Input;
 using EY_Project.UseCases.Vagas.Ports.Inputs;
@@ -54,5 +55,25 @@ public class CandidatoController : ControllerBase
         await _mongoHelper.UpdateDocument<PositionsInput>(_cluster, "vagas", filterVaga, updateVaga);
 
         return Ok("Candidato atrelado a vaga");
+    }
+
+    [HttpPut("/altera-status-processo")]
+    public async Task<IActionResult> PostCandidatos(
+        [FromQuery] long idCandidato, [FromQuery] long idVaga, [FromQuery] long idProcesso, [FromQuery] String status
+       )
+    {
+        var candidatos = await _mongoHelper.GetAllDocuments<CandidatoInput>(_cluster, _collection);
+        var candidatoSelecionado = candidatos.Where(x => x.Id == idCandidato).FirstOrDefault();
+
+        candidatoSelecionado!.VagasSelecionadas!
+            .Find(x => x?.Vaga?.Id == idVaga)!.Vaga!.SelectiveProcess!
+            .Find(x => x.Id == idProcesso)!.Status = status;
+
+        var filterCandidato = Builders<CandidatoInput>.Filter.Eq("Id", candidatoSelecionado?.Id);
+        var updateCandidato = Builders<CandidatoInput>.Update.Set(x => x.VagasSelecionadas, candidatoSelecionado!.VagasSelecionadas);
+
+        await _mongoHelper.UpdateDocument(_cluster, _collection, filterCandidato, updateCandidato);
+
+        return Ok("Status alterado com sucesso");
     }
 }
