@@ -29,7 +29,7 @@ namespace EY_Project.Controllers.Login
             if (empresa != null)
             {
                 if (empresa.Senha == senha)
-                    return Ok(new LoginInput(empresa.Id, "empresa"));
+                    return Ok(new LoginInput<EmpresaInput>(empresa.Id, "empresa", empresa));
 
                 return BadRequest("Senha incorreta");
             }
@@ -41,7 +41,7 @@ namespace EY_Project.Controllers.Login
             if (recrutador != null)
             {
                 if (recrutador.Senha == senha)
-                    return Ok(new LoginInput(recrutador.Id, "recrutador"));
+                    return Ok(new LoginInput<RecruiterInput>(recrutador.Id, "recrutador", recrutador));
 
                 return BadRequest("Senha incorreta");
             }
@@ -53,7 +53,7 @@ namespace EY_Project.Controllers.Login
             if (candidato != null)
             {
                 if (candidato.Senha == senha)
-                    return Ok(new LoginInput(candidato.Id, "candidato"));
+                    return Ok(new LoginInput<CandidatoInput>(candidato.Id, "candidato", candidato));
 
                 return BadRequest("Senha incorreta");
             }

@@ -96,88 +96,78 @@ C:/Lucas FIAP -2023/EY_PROJECT/obj/Debug/net6.0/EY_Project.pdb
 /Users/luiz.silva/picpay/EY_PROJECT/obj/Debug/net6.0/EY_Project.pdb
 /Users/luiz.silva/picpay/EY_PROJECT/obj/Debug/net6.0/EY_Project.genruntimeconfig.cache
 /Users/luiz.silva/picpay/EY_PROJECT/obj/Debug/net6.0/ref/EY_Project.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\appsettings.Development.json
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\appsettings.json
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\EY_Project.exe
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\EY_Project.deps.json
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\EY_Project.runtimeconfig.json
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\EY_Project.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\EY_Project.pdb
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\AWSSDK.Core.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\DnsClient.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\Microsoft.OpenApi.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\MongoDB.Bson.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\MongoDB.Driver.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\MongoDB.Driver.Core.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\SharpCompress.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\Snappier.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\ZstdSharp.dll
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
-C:\Lucas FIAP -2023\EY_PROJECT\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.csproj.AssemblyReference.cache
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.GeneratedMSBuildEditorConfig.editorconfig
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.AssemblyInfoInputs.cache
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.AssemblyInfo.cs
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.csproj.CoreCompileInputs.cache
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.MvcApplicationPartsAssemblyInfo.cs
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.MvcApplicationPartsAssemblyInfo.cache
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\staticwebassets.build.json
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\staticwebassets.development.json
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\scopedcss\bundle\EY_Project.styles.css
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.csproj.CopyComplete
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.dll
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\refint\EY_Project.dll
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.pdb
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\EY_Project.genruntimeconfig.cache
-C:\Lucas FIAP -2023\EY_PROJECT\obj\Debug\net6.0\ref\EY_Project.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\appsettings.json
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\EY_Project.exe
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\EY_Project.deps.json
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\EY_Project.runtimeconfig.json
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\EY_Project.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\EY_Project.pdb
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\AWSSDK.Core.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\DnsClient.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\Microsoft.OpenApi.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\MongoDB.Bson.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\MongoDB.Driver.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\MongoDB.Driver.Core.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\SharpCompress.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\Snappier.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\ZstdSharp.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
-C:\Users\lsmar\Downloads\EY_PROJECT\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\EY_Project.csproj.AssemblyReference.cache
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\EY_Project.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\EY_Project.AssemblyInfoInputs.cache
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\EY_Project.AssemblyInfo.cs
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\EY_Project.csproj.CoreCompileInputs.cache
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\EY_Project.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\EY_Project.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\staticwebassets\msbuild.EY_Project.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\staticwebassets\msbuild.build.EY_Project.props
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.EY_Project.props
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.EY_Project.props
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\scopedcss\bundle\EY_Project.styles.css
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\EY_Project.csproj.CopyComplete
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\EY_Project.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\refint\EY_Project.dll
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\EY_Project.pdb
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\EY_Project.genruntimeconfig.cache
-C:\Users\lsmar\Downloads\EY_PROJECT\obj\Debug\net6.0\ref\EY_Project.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/appsettings.Development.json
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/appsettings.json
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/EY_Project.exe
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/EY_Project.deps.json
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/EY_Project.runtimeconfig.json
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/EY_Project.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/EY_Project.pdb
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/AWSSDK.Core.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/AWSSDK.SecurityToken.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/DnsClient.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/Microsoft.OpenApi.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/MongoDB.Bson.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/MongoDB.Driver.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/MongoDB.Driver.Core.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/MongoDB.Libmongocrypt.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/SharpCompress.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/Snappier.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/ZstdSharp.dll
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/runtimes/linux/native/libmongocrypt.so
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/runtimes/osx/native/libmongocrypt.dylib
+C:/Lucas FIAP -2023/EY_PROJECT/bin/Debug/net6.0/runtimes/win/native/mongocrypt.dll
+C:/Lucas FIAP -2023/EY_PROJECT/obj/Debug/net6.0/staticwebassets.build.json
+C:/Lucas FIAP -2023/EY_PROJECT/obj/Debug/net6.0/staticwebassets.development.json
+C:/Lucas FIAP -2023/EY_PROJECT/obj/Debug/net6.0/scopedcss/bundle/EY_Project.styles.css
+C:/Lucas FIAP -2023/EY_PROJECT/obj/Debug/net6.0/EY_Project.csproj.CopyComplete
+C:/Lucas FIAP -2023/EY_PROJECT/obj/Debug/net6.0/EY_Project.genruntimeconfig.cache
+C:/Lucas FIAP -2023/EY_PROJECT/obj/Debug/net6.0/ref/EY_Project.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/appsettings.Development.json
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/appsettings.json
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/EY_Project.exe
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/EY_Project.deps.json
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/EY_Project.runtimeconfig.json
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/EY_Project.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/EY_Project.pdb
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/AWSSDK.Core.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/AWSSDK.SecurityToken.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/DnsClient.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/Microsoft.OpenApi.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/MongoDB.Bson.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/MongoDB.Driver.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/MongoDB.Driver.Core.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/MongoDB.Libmongocrypt.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/SharpCompress.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/Snappier.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/ZstdSharp.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/runtimes/linux/native/libmongocrypt.so
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/runtimes/osx/native/libmongocrypt.dylib
+C:/Users/lsmar/Downloads/EY_PROJECT/bin/Debug/net6.0/runtimes/win/native/mongocrypt.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/EY_Project.csproj.AssemblyReference.cache
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/EY_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/EY_Project.AssemblyInfoInputs.cache
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/EY_Project.AssemblyInfo.cs
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/EY_Project.csproj.CoreCompileInputs.cache
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/EY_Project.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/EY_Project.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/staticwebassets/msbuild.EY_Project.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/staticwebassets/msbuild.build.EY_Project.props
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.EY_Project.props
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.EY_Project.props
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/staticwebassets.pack.json
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/staticwebassets.build.json
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/staticwebassets.development.json
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/scopedcss/bundle/EY_Project.styles.css
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/EY_Project.csproj.CopyComplete
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/EY_Project.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/refint/EY_Project.dll
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/EY_Project.pdb
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/EY_Project.genruntimeconfig.cache
+C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/ref/EY_Project.dll
