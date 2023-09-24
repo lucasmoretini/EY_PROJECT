@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lsmar\\Downloads\\EY_PROJECT\\EY_Project.csproj": {}
+    "C:\\Users\\Lucas Moretini\\Documents\\EY_PROJECT\\EY_Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lsmar\\Downloads\\EY_PROJECT\\EY_Project.csproj": {
+    "C:\\Users\\Lucas Moretini\\Documents\\EY_PROJECT\\EY_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lsmar\\Downloads\\EY_PROJECT\\EY_Project.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas Moretini\\Documents\\EY_PROJECT\\EY_Project.csproj",
         "projectName": "EY_Project",
-        "projectPath": "C:\\Users\\lsmar\\Downloads\\EY_PROJECT\\EY_Project.csproj",
-        "packagesPath": "C:\\Users\\lsmar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lsmar\\Downloads\\EY_PROJECT\\obj\\",
+        "projectPath": "C:\\Users\\Lucas Moretini\\Documents\\EY_PROJECT\\EY_Project.csproj",
+        "packagesPath": "C:\\Users\\Lucas Moretini\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lucas Moretini\\Documents\\EY_PROJECT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lsmar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lucas Moretini\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,8 +59,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -72,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -59,7 +59,7 @@ public class VagasController : ControllerBase
         return Ok("vaga atualizada com sucesso");
     }
 
-    [HttpPut("/deleta-vaga")]
+    [HttpDelete("/deleta-vaga")]
     public async Task<IActionResult> DeletePostions([FromQuery] long id)
     {
         var filter = Builders<PositionsInput>.Filter.Eq("Id", id);
