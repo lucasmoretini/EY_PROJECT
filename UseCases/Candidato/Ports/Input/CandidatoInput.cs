@@ -18,6 +18,6 @@ public class CandidatoInput
     public decimal? PretensaoSalarial { get; set; }
     public string? Senha { get; set; }
     public List<VagaSelecionada>? VagasSelecionadas { get; set; } = new List<VagaSelecionada>();
-    public List<SoftSkills>? SoftSkills { get; set; } = new List<SoftSkills>();
-    public List<HardSkills>? HardSkills { get; set; } = new List<HardSkills>();
+    public List<string>? SoftSkills { get; set; } = new List<string>();
+    public List<string>? HardSkills { get; set; } = new List<string>();
 }
