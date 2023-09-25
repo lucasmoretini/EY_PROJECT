@@ -1,4 +1,5 @@
 ﻿using EY_Project.Infrastructure.Repositories;
+using EY_Project.UseCases.Empresa.Ports.Input;
 using EY_Project.UseCases.Recrutador.Ports.Input;
 using EY_Project.UseCases.Vagas.Ports.Inputs;
 using Microsoft.AspNetCore.Mvc;
@@ -22,7 +23,18 @@ public class VagasController : ControllerBase
     public async Task<IActionResult> GetAllPositions()
     {
         var positions = await _mongoHelper.GetAllDocuments<PositionsInput>(_cluster, _collection);
-        return Ok(positions);
+        var response = new List<PositionsDto>();
+        foreach(var x in positions)
+        {
+            var filter = Builders<RecruiterInput>.Filter.Eq("Id", x.IdRecruiter);
+            var recruiter = await _mongoHelper.GetFilteredDocuments(_cluster, "recrutador", filter);
+
+            var filterEmpresa = Builders<EmpresaInput>.Filter.Eq("Id", recruiter!.FirstOrDefault()!.EmpresaId);
+            var empresa = await _mongoHelper.GetFilteredDocuments(_cluster, "empresas", filterEmpresa);
+
+            response.Add(new PositionsDto(x, empresa.FirstOrDefault()));
+        };
+        return Ok(response);
     }
 
     [HttpPost("/cadastra-vaga")]

@@ -19,6 +19,10 @@ public class CandidatoInput
     public string? ModeloContratacao { get; set; }
     public string? PretensaoSalarial { get; set; }
     public string? Senha { get; set; }
+    public string? Sobre { get; set; }
+    public string? ExperienciaProfissional { get; set; }
+    public string? ExperienciaAcademica { get; set; }
+    public string? sonhosObjetivos { get; set; }
     public List<VagaSelecionada>? VagasSelecionadas { get; set; } = new List<VagaSelecionada>();
     public List<string>? SoftSkills { get; set; } = new List<string>();
     public List<string>? HardSkills { get; set; } = new List<string>();
