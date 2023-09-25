@@ -41,7 +41,7 @@ public class CandidatoController : ControllerBase
         var vagas = await _mongoHelper.GetAllDocuments<PositionsInput>(_cluster, "vagas");
         var vaga = vagas.Where(x => x.Id == idVaga).FirstOrDefault();
 
-        candidatoSelecionado?.VagasSelecionadas.Add(new VagaSelecionada(idEtapa, vaga!));
+        candidatoSelecionado?.VagasSelecionadas?.Add(new VagaSelecionada(idEtapa, vaga!));
         
         var update = Builders<CandidatoInput>.Update.Set(x => x.VagasSelecionadas, candidatoSelecionado?.VagasSelecionadas);
         var filter = Builders<CandidatoInput>.Filter.Eq("Id", candidatoSelecionado?.Id);

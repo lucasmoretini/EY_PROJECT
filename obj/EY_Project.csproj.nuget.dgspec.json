@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/luiz.silva/picpay/EY_PROJECT/EY_Project.csproj": {}
+    "C:\\Users\\Lucas Moretini\\Documents\\EY_PROJECT\\EY_Project.csproj": {}
   },
   "projects": {
-    "/Users/luiz.silva/picpay/EY_PROJECT/EY_Project.csproj": {
+    "C:\\Users\\Lucas Moretini\\Documents\\EY_PROJECT\\EY_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/luiz.silva/picpay/EY_PROJECT/EY_Project.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas Moretini\\Documents\\EY_PROJECT\\EY_Project.csproj",
         "projectName": "EY_Project",
-        "projectPath": "/Users/luiz.silva/picpay/EY_PROJECT/EY_Project.csproj",
-        "packagesPath": "/Users/luiz.silva/.nuget/packages/",
-        "outputPath": "/Users/luiz.silva/picpay/EY_PROJECT/obj/",
+        "projectPath": "C:\\Users\\Lucas Moretini\\Documents\\EY_PROJECT\\EY_Project.csproj",
+        "packagesPath": "C:\\Users\\Lucas Moretini\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lucas Moretini\\Documents\\EY_PROJECT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/luiz.silva/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Lucas Moretini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,8 +59,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

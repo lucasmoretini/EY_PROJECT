@@ -7,6 +7,8 @@ public class CandidatoInput
     public string? Nome { get; set; }
     public string? NomeSocial { get; set; }
     public string? DataNascimento { get; set; }
+    public string? Cidade { get; set; }
+    public string? Estado { get; set; }
     public string? Sexo { get; set; }
     public string? OrientacaoSexual { get; set; }
     public string? Etnia { get; set; }
