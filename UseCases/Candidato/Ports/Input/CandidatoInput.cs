@@ -17,7 +17,7 @@ public class CandidatoInput
     public string? Profissao { get; set; }
     public string? ModeloTrabalho { get; set; }
     public string? ModeloContratacao { get; set; }
-    public decimal? PretensaoSalarial { get; set; }
+    public string? PretensaoSalarial { get; set; }
     public string? Senha { get; set; }
     public List<VagaSelecionada>? VagasSelecionadas { get; set; } = new List<VagaSelecionada>();
     public List<string>? SoftSkills { get; set; } = new List<string>();
