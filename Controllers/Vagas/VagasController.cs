@@ -111,4 +111,15 @@ public class VagasController : ControllerBase
 
         return Ok("vaga deletada com sucesso");
     }
+
+    [HttpGet("/relatorio-candidatos")]
+    public async Task<IActionResult> getRelatorioCandidatos([FromQuery] long idVaga)
+    {
+        var filter = Builders<PositionsInput>.Filter.Eq("Id", idVaga);
+        var vaga = await _mongoHelper.GetFilteredDocuments(_cluster, _collection, filter);
+
+        var candidatos = vaga?.FirstOrDefault()?.Candidatos;
+
+        return Ok("vaga deletada com sucesso");
+    }
 }

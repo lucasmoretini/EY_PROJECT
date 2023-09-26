@@ -95,4 +95,26 @@ public class CandidatoController : ControllerBase
 
         return Ok("Etapa alterada com sucesso");
     }
+
+    [HttpDelete("/deleta-candidato")]
+    public async Task<IActionResult> DeleteCandidato([FromQuery] long id)
+    {
+        var filter = Builders<CandidatoInput>.Filter.Eq("Id", id);
+        await _mongoHelper.DeleteDocument<CandidatoInput>(_cluster, _collection, filter);
+
+        var vagas = await _mongoHelper.GetAllDocuments<PositionsInput>(_cluster, "vagas");
+        foreach (var vaga in vagas)
+        {
+            if(vaga!.Candidatos!.Contains(id))
+            {
+                vaga!.Candidatos!.Remove(vaga!.Candidatos!.Find(x => x == id));
+                var update = Builders<PositionsInput>.Update.Set(x => x.Candidatos, vaga!.Candidatos!);
+                var filterVaga = Builders<PositionsInput>.Filter.Eq("Id", vaga.Id);
+
+                await _mongoHelper.UpdateDocument(_cluster, "vagas", filterVaga, update);
+            }
+        }
+
+        return Ok("vaga deletada com sucesso");
+    }
 }
