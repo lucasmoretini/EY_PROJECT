@@ -1,4 +1,5 @@
 ﻿using EY_Project.Infrastructure.Repositories;
+using EY_Project.UseCases.Candidato.Ports.Input;
 using EY_Project.UseCases.Empresa.Ports.Input;
 using EY_Project.UseCases.Recrutador.Ports.Input;
 using EY_Project.UseCases.Vagas.Ports.Inputs;
@@ -68,6 +69,23 @@ public class VagasController : ControllerBase
                                              .Set(x => x.SelectiveProcess, input.SelectiveProcess);
 
         await _mongoHelper.UpdateDocument<PositionsInput>(_cluster, _collection, filter, update);
+
+        var vaga = await _mongoHelper.GetFilteredDocuments<PositionsInput>(_cluster, _collection, filter);
+
+        var candidatos = await _mongoHelper.GetAllDocuments<CandidatoInput>(_cluster, "candidatos");
+        foreach (var candidato in candidatos)
+        {
+            var vagaSelecionada = candidato?.VagasSelecionadas?.Find(x => x?.Vaga?.Id == input.Id)?.Vaga;
+            if(vagaSelecionada != null)
+            {
+                candidato!.VagasSelecionadas!.Find(x => x?.Vaga?.Id == input.Id)!.Vaga = vaga!.FirstOrDefault();
+                var updateCandidato = Builders<CandidatoInput>.Update.Set(x => x.VagasSelecionadas, candidato.VagasSelecionadas);
+                var filterCandidato = Builders<CandidatoInput>.Filter.Eq("Id", candidato.Id);
+                await _mongoHelper.UpdateDocument<CandidatoInput>(_cluster, "candidatos", filterCandidato, updateCandidato);
+            }
+
+        }
+
         return Ok("vaga atualizada com sucesso");
     }
 
@@ -76,6 +94,21 @@ public class VagasController : ControllerBase
     {
         var filter = Builders<PositionsInput>.Filter.Eq("Id", id);
         await _mongoHelper.DeleteDocument<PositionsInput>(_cluster, _collection, filter);
+
+        var candidatos = await _mongoHelper.GetAllDocuments<CandidatoInput>(_cluster, "candidatos");
+        foreach(var candidato in candidatos)
+        {
+            var vagaSelecionada = candidato.VagasSelecionadas?.Find(x => x?.Vaga?.Id == id);
+            if(vagaSelecionada != null)
+            {
+                candidato?.VagasSelecionadas?.Remove(vagaSelecionada);
+                var update = Builders<CandidatoInput>.Update.Set(x => x.VagasSelecionadas, candidato!.VagasSelecionadas);
+                var filterCandidato = Builders<CandidatoInput>.Filter.Eq("Id", candidato.Id);
+
+                await _mongoHelper.UpdateDocument<CandidatoInput>(_cluster, "candidatos", filterCandidato, update);
+            }
+        }
+
         return Ok("vaga deletada com sucesso");
     }
 }
