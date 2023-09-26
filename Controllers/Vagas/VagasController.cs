@@ -1,4 +1,7 @@
-﻿using EY_Project.Infrastructure.Repositories;
+﻿using System.Globalization;
+using CsvHelper;
+using DnsClient.Protocol;
+using EY_Project.Infrastructure.Repositories;
 using EY_Project.UseCases.Candidato.Ports.Input;
 using EY_Project.UseCases.Empresa.Ports.Input;
 using EY_Project.UseCases.Recrutador.Ports.Input;
@@ -118,8 +121,26 @@ public class VagasController : ControllerBase
         var filter = Builders<PositionsInput>.Filter.Eq("Id", idVaga);
         var vaga = await _mongoHelper.GetFilteredDocuments(_cluster, _collection, filter);
 
-        var candidatos = vaga?.FirstOrDefault()?.Candidatos;
+        var candidatosIdVaga = vaga?.FirstOrDefault()?.Candidatos;
+        var candidatos = await _mongoHelper.GetAllDocuments<CandidatoInput>(_cluster, "candidatos");
 
-        return Ok("vaga deletada com sucesso");
+        if (candidatosIdVaga != null)
+        {
+            candidatos = candidatos.Where(x => candidatosIdVaga.Contains(x.Id)).ToList();
+
+            string fileName = $"candidatos-vaga-{idVaga}.csv";
+
+            using (var writer = new StreamWriter(fileName))
+            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+            {
+                csv.WriteRecords(candidatos);
+            }
+
+            byte[] fileBytes = System.IO.File.ReadAllBytes(fileName);
+
+            return File(fileBytes, "text/csv", fileName);
+        }
+
+        return NotFound("nenhum candidato foi encontrado");
     }
 }

@@ -115,6 +115,6 @@ public class CandidatoController : ControllerBase
             }
         }
 
-        return Ok("vaga deletada com sucesso");
+        return Ok("candidato deletado com sucesso");
     }
 }

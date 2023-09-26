@@ -1,3 +1,5 @@
+using CsvHelper.Configuration.Attributes;
+
 namespace EY_Project.UseCases.Candidato.Ports.Input;
 
 public class CandidatoInput
@@ -18,6 +20,7 @@ public class CandidatoInput
     public string? ModeloTrabalho { get; set; }
     public string? ModeloContratacao { get; set; }
     public string? PretensaoSalarial { get; set; }
+    [Ignore]
     public string? Senha { get; set; }
     public string? Sobre { get; set; }
     public string? ExperienciaProfissional { get; set; }

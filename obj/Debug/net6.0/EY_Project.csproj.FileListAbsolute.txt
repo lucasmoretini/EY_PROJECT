@@ -171,3 +171,4 @@ C:/Users/lsmar/Downloads/EY_PROJECT/obj/Debug/net6.0/ref/EY_Project.dll
 /Users/luiz.silva/picpay/EY_PROJECT/obj/Debug/net6.0/EY_Project.pdb
 /Users/luiz.silva/picpay/EY_PROJECT/obj/Debug/net6.0/EY_Project.genruntimeconfig.cache
 /Users/luiz.silva/picpay/EY_PROJECT/obj/Debug/net6.0/ref/EY_Project.dll
+/Users/luiz.silva/picpay/EY_PROJECT/bin/Debug/net6.0/CsvHelper.dll

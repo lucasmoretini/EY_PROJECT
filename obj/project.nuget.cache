@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "71GZjvxlQBFvBNjlWMD1IlyLcK6rfAomnpYiqUuR157qqeLWefy0MTQdzgiaAZm+T6KOgEkZwVsHzkxmJ9G6sg==",
+  "dgSpecHash": "ePZ+nvTBJhxi0eF/JZYmNKcjA//U4xvzVaFsAv4ez0hRhydrl34bJYwTha7XSlYey5AKCJW7hbzO5TKoCBc4ZA==",
   "success": true,
   "projectFilePath": "/Users/luiz.silva/picpay/EY_PROJECT/EY_Project.csproj",
   "expectedPackageFiles": [
     "/Users/luiz.silva/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/Users/luiz.silva/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",
+    "/Users/luiz.silva/.nuget/packages/csvhelper/30.0.1/csvhelper.30.0.1.nupkg.sha512",
     "/Users/luiz.silva/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
     "/Users/luiz.silva/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/luiz.silva/.nuget/packages/microsoft.extensions.logging.abstractions/2.0.0/microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
